@@ -13,6 +13,10 @@ function createElement(name, attributes, children) {
   };
 };
 
+function elementsToHTML(virtualDom) {
+  // TODO
+}
+
 function getElement(element) {
   let elementToReturn;
   if (typeof element === 'string') {
@@ -43,6 +47,8 @@ function start(rootComponent, rootHtml: HTMLElement): void {
   const rootInstance = new rootComponent();
   const rootRender = rootInstance.render();
   const virtualDom = getVirtualDom(rootRender);
+  const site = elementsToHTML(virtualDom);
+  console.log(site);
 }
 
 export {
