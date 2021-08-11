@@ -9,7 +9,13 @@ class App extends ε.Component {
   //     <div>
   //       <Header />
   //     </div>
-  render() {}
+  render() {
+    return ε.createElement(
+      'div',
+      {},
+      [ε.createElement(Header, {}, [])]
+      );
+  }
 }
 
 export default App;

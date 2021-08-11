@@ -12,7 +12,15 @@ import Title from './Title';
 class Header extends ε.Component {
 
   render() {
-    console.log('Hello');
+    return ε.createElement(
+        'div',
+        {
+          class: "w-full flex justify-center items-center border-2 bg-gray-300",
+        },
+        [
+          ε.createElement(Title,{type: "h1"}, ["Hello world"])
+        ]
+      )
   }
 }
 
